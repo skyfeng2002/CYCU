@@ -331,7 +331,7 @@
                 }
 
                 const result = await response.json();
-                console.log('伺服器回應:', result);
+                console.log('伺服器回應:', JSON.stringify(result));  // ← 加這行
 
                 // 處理回應（可能是陣列格式）
                 let data;
